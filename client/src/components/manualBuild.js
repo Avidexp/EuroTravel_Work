@@ -150,7 +150,7 @@ componentWillMount = () => {
     this.props.wipePlaces(); // to reset the places per search
     for (var i = 0; i < places_type.length; i ++){
         this.props.addType(places_type[i]);
-        console.log("Place added: " + places_type[i]);
+        console.log("Type added: " + places_type[i]);
     }
 
     console.log("Places_type map completed");

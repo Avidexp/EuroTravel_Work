@@ -44,6 +44,9 @@ class Dashboard extends Component {
   onHotelClick(){
     this.context.router.history.push('/hotelBuild');
   }
+  findLocation(){
+    this.context.router.history.push('/userLocation');
+  }
   handleSave = place => {
     console.log(place);
     const user_email = localStorage.getItem('userEmail');
@@ -1003,8 +1006,10 @@ class Dashboard extends Component {
               <strong>or</strong>
             </div>
           </form>
-         
+          
         <button onClick={this.onHotelClick.bind(this)} className='btn btn-default'>Search Hotels</button>
+        <button onClick={this.findLocation.bind(this)} className='btn btn-default'>Find Places Near You</button>
+
         </div>
         </div>
         
